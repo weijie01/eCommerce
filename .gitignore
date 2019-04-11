@@ -76,3 +76,6 @@ fastlane/test_output
 iOSInjectionProject/
 
 # End of https://www.gitignore.io/api/swift
+
+eCommerce/GoogleService-Info.plist
+eCommerceAdmin/GoogleService-Info.plist

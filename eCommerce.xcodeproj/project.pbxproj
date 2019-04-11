@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		060257B0089C31AEA1613027 /* Pods_eCommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4344EB95A74BEBA135B6C075 /* Pods_eCommerce.framework */; };
+		6D025C0D225F1E9B003DA04B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D025C0C225F1E9B003DA04B /* GoogleService-Info.plist */; };
+		6D025C0F225F214E003DA04B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D025C0E225F214E003DA04B /* GoogleService-Info.plist */; };
 		6D27583D225C217D00A750F2 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D27583C225C217D00A750F2 /* LoginStoryboard.storyboard */; };
 		6DB2A612225B1A4B00FD6845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB2A611225B1A4B00FD6845 /* AppDelegate.swift */; };
 		6DB2A614225B1A4B00FD6845 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB2A613225B1A4B00FD6845 /* ViewController.swift */; };
@@ -28,6 +30,8 @@
 		4344EB95A74BEBA135B6C075 /* Pods_eCommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eCommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		454BE9F220FACBAFB3480ABB /* Pods-eCommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eCommerce.release.xcconfig"; path = "Target Support Files/Pods-eCommerce/Pods-eCommerce.release.xcconfig"; sourceTree = "<group>"; };
 		54455A47C049EABF2426851B /* Pods-eCommerceAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eCommerceAdmin.release.xcconfig"; path = "Target Support Files/Pods-eCommerceAdmin/Pods-eCommerceAdmin.release.xcconfig"; sourceTree = "<group>"; };
+		6D025C0C225F1E9B003DA04B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6D025C0E225F214E003DA04B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6D27583C225C217D00A750F2 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		6DB2A60E225B1A4B00FD6845 /* eCommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eCommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB2A611225B1A4B00FD6845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +86,6 @@
 				3A3755196C86829785E9C2DD /* Pods-eCommerceAdmin.debug.xcconfig */,
 				54455A47C049EABF2426851B /* Pods-eCommerceAdmin.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -115,6 +118,7 @@
 				6D27583C225C217D00A750F2 /* LoginStoryboard.storyboard */,
 				6DB2A615225B1A4B00FD6845 /* Main.storyboard */,
 				6DB2A61A225B1A4C00FD6845 /* LaunchScreen.storyboard */,
+				6D025C0C225F1E9B003DA04B /* GoogleService-Info.plist */,
 				6DB2A61D225B1A4C00FD6845 /* Info.plist */,
 			);
 			path = eCommerce;
@@ -127,6 +131,7 @@
 				6DB2A62B225B1CF000FD6845 /* ViewController.swift */,
 				6DB2A62D225B1CF000FD6845 /* Main.storyboard */,
 				6DB2A632225B1CF100FD6845 /* LaunchScreen.storyboard */,
+				6D025C0E225F214E003DA04B /* GoogleService-Info.plist */,
 				6DB2A635225B1CF100FD6845 /* Info.plist */,
 			);
 			path = eCommerceAdmin;
@@ -225,6 +230,7 @@
 			files = (
 				6DB2A61C225B1A4C00FD6845 /* LaunchScreen.storyboard in Resources */,
 				6DB2A619225B1A4C00FD6845 /* Assets.xcassets in Resources */,
+				6D025C0D225F1E9B003DA04B /* GoogleService-Info.plist in Resources */,
 				6DB2A617225B1A4B00FD6845 /* Main.storyboard in Resources */,
 				6D27583D225C217D00A750F2 /* LoginStoryboard.storyboard in Resources */,
 			);
@@ -235,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DB2A634225B1CF100FD6845 /* LaunchScreen.storyboard in Resources */,
+				6D025C0F225F214E003DA04B /* GoogleService-Info.plist in Resources */,
 				6DB2A63A225B1D5C00FD6845 /* Assets.xcassets in Resources */,
 				6DB2A62F225B1CF000FD6845 /* Main.storyboard in Resources */,
 			);
