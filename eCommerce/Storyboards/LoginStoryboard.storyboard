@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xnx-2N-ONE">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="1079" y="92"/>
         </scene>
-        <!--View Controller-->
+        <!--RegisterVC-->
         <scene sceneID="Xef-nf-fgU">
             <objects>
-                <viewController id="Rju-M8-Ced" sceneMemberID="viewController">
+                <viewController id="Rju-M8-Ced" customClass="RegisterVC" customModule="eCommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xyx-LF-b0K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,6 +184,9 @@
                                         <state key="normal" title="Register">
                                             <color key="titleColor" red="0.95294117649999999" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerClicked:" destination="Rju-M8-Ced" eventType="touchUpInside" id="KYE-C0-7hv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -206,6 +209,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lbw-W2-eBx"/>
                     </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Pkk-LN-WD4" id="adt-Gy-QdK"/>
+                        <outlet property="confirmPasswordText" destination="iiy-5F-kwu" id="iyg-YB-bNG"/>
+                        <outlet property="emailText" destination="jLS-h8-E2O" id="iAz-7N-gtR"/>
+                        <outlet property="passwordText" destination="3Zm-eu-TGM" id="cIx-Qo-B6N"/>
+                        <outlet property="usernameText" destination="d2E-Rv-WiK" id="oLD-89-gmM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X0B-JA-2rR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -214,7 +224,7 @@
         <!--Navigation Controller-->
         <scene sceneID="FaE-35-fYQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xnx-2N-ONE" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="loginVC" automaticallyAdjustsScrollViewInsets="NO" id="Xnx-2N-ONE" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xbC-aV-Dk0">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
