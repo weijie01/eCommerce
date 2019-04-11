@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060257B0089C31AEA1613027 /* Pods_eCommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4344EB95A74BEBA135B6C075 /* Pods_eCommerce.framework */; };
 		6D27583D225C217D00A750F2 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D27583C225C217D00A750F2 /* LoginStoryboard.storyboard */; };
 		6DB2A612225B1A4B00FD6845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB2A611225B1A4B00FD6845 /* AppDelegate.swift */; };
 		6DB2A614225B1A4B00FD6845 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB2A613225B1A4B00FD6845 /* ViewController.swift */; };
@@ -18,9 +19,15 @@
 		6DB2A62F225B1CF000FD6845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2A62D225B1CF000FD6845 /* Main.storyboard */; };
 		6DB2A634225B1CF100FD6845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2A632225B1CF100FD6845 /* LaunchScreen.storyboard */; };
 		6DB2A63A225B1D5C00FD6845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2A618225B1A4C00FD6845 /* Assets.xcassets */; };
+		C9D0827FD1B36769ECA828FE /* Pods_eCommerceAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83265144D9D34D48A42717C2 /* Pods_eCommerceAdmin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		199E6E391C5136B82D82BF98 /* Pods-eCommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eCommerce.debug.xcconfig"; path = "Target Support Files/Pods-eCommerce/Pods-eCommerce.debug.xcconfig"; sourceTree = "<group>"; };
+		3A3755196C86829785E9C2DD /* Pods-eCommerceAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eCommerceAdmin.debug.xcconfig"; path = "Target Support Files/Pods-eCommerceAdmin/Pods-eCommerceAdmin.debug.xcconfig"; sourceTree = "<group>"; };
+		4344EB95A74BEBA135B6C075 /* Pods_eCommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eCommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		454BE9F220FACBAFB3480ABB /* Pods-eCommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eCommerce.release.xcconfig"; path = "Target Support Files/Pods-eCommerce/Pods-eCommerce.release.xcconfig"; sourceTree = "<group>"; };
+		54455A47C049EABF2426851B /* Pods-eCommerceAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eCommerceAdmin.release.xcconfig"; path = "Target Support Files/Pods-eCommerceAdmin/Pods-eCommerceAdmin.release.xcconfig"; sourceTree = "<group>"; };
 		6D27583C225C217D00A750F2 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
 		6DB2A60E225B1A4B00FD6845 /* eCommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eCommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB2A611225B1A4B00FD6845 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +42,7 @@
 		6DB2A62E225B1CF000FD6845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DB2A633225B1CF100FD6845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DB2A635225B1CF100FD6845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83265144D9D34D48A42717C2 /* Pods_eCommerceAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eCommerceAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				060257B0089C31AEA1613027 /* Pods_eCommerce.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,12 +58,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D0827FD1B36769ECA828FE /* Pods_eCommerceAdmin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55DBECD73FE23DC4EEBE61EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4344EB95A74BEBA135B6C075 /* Pods_eCommerce.framework */,
+				83265144D9D34D48A42717C2 /* Pods_eCommerceAdmin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5877A0973167D28B99C469AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				199E6E391C5136B82D82BF98 /* Pods-eCommerce.debug.xcconfig */,
+				454BE9F220FACBAFB3480ABB /* Pods-eCommerce.release.xcconfig */,
+				3A3755196C86829785E9C2DD /* Pods-eCommerceAdmin.debug.xcconfig */,
+				54455A47C049EABF2426851B /* Pods-eCommerceAdmin.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6DB2A605225B1A4B00FD6845 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +93,8 @@
 				6DB2A610225B1A4B00FD6845 /* eCommerce */,
 				6DB2A628225B1CF000FD6845 /* eCommerceAdmin */,
 				6DB2A60F225B1A4B00FD6845 /* Products */,
+				5877A0973167D28B99C469AF /* Pods */,
+				55DBECD73FE23DC4EEBE61EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DB2A620225B1A4C00FD6845 /* Build configuration list for PBXNativeTarget "eCommerce" */;
 			buildPhases = (
+				4EC84505F32D268146C0C8FF /* [CP] Check Pods Manifest.lock */,
 				6DB2A60A225B1A4B00FD6845 /* Sources */,
 				6DB2A60B225B1A4B00FD6845 /* Frameworks */,
 				6DB2A60C225B1A4B00FD6845 /* Resources */,
+				FE6D2B266814842DA2E84CE4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DB2A636225B1CF100FD6845 /* Build configuration list for PBXNativeTarget "eCommerceAdmin" */;
 			buildPhases = (
+				70C364F6236F168478E6FB04 /* [CP] Check Pods Manifest.lock */,
 				6DB2A623225B1CF000FD6845 /* Sources */,
 				6DB2A624225B1CF000FD6845 /* Frameworks */,
 				6DB2A625225B1CF000FD6845 /* Resources */,
+				416F8E68397DFCD788A898DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -204,6 +241,143 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		416F8E68397DFCD788A898DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eCommerceAdmin/Pods-eCommerceAdmin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/CodableFirebase/CodableFirebase.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableFirebase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CropViewController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eCommerceAdmin/Pods-eCommerceAdmin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EC84505F32D268146C0C8FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eCommerce-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70C364F6236F168478E6FB04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eCommerceAdmin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE6D2B266814842DA2E84CE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eCommerce/Pods-eCommerce-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/CodableFirebase/CodableFirebase.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableFirebase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eCommerce/Pods-eCommerce-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DB2A60A225B1A4B00FD6845 /* Sources */ = {
@@ -380,6 +554,7 @@
 		};
 		6DB2A621225B1A4C00FD6845 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 199E6E391C5136B82D82BF98 /* Pods-eCommerce.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -397,6 +572,7 @@
 		};
 		6DB2A622225B1A4C00FD6845 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 454BE9F220FACBAFB3480ABB /* Pods-eCommerce.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -414,6 +590,7 @@
 		};
 		6DB2A637225B1CF100FD6845 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A3755196C86829785E9C2DD /* Pods-eCommerceAdmin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -431,6 +608,7 @@
 		};
 		6DB2A638225B1CF100FD6845 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54455A47C049EABF2426851B /* Pods-eCommerceAdmin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
