@@ -194,11 +194,20 @@
                                 <rect key="frame" x="169" y="410.33333333333331" width="37" height="37"/>
                                 <color key="color" red="0.2274509804" green="0.2666666667" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </activityIndicatorView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="red_check" translatesAutoresizingMaskIntoConstraints="NO" id="35p-ve-aZ7">
+                                <rect key="frame" x="322" y="306" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="5u2-1Y-0GH"/>
+                                    <constraint firstAttribute="width" constant="25" id="add-7R-VwV"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Pkk-LN-WD4" firstAttribute="centerX" secondItem="Xyx-LF-b0K" secondAttribute="centerX" id="0wL-sO-7ue"/>
                             <constraint firstItem="lbw-W2-eBx" firstAttribute="trailing" secondItem="Ytu-Zi-3qf" secondAttribute="trailing" constant="20" id="9kT-nZ-mm1"/>
+                            <constraint firstItem="35p-ve-aZ7" firstAttribute="trailing" secondItem="iiy-5F-kwu" secondAttribute="trailing" constant="-8" id="B6a-VU-Cpr"/>
+                            <constraint firstItem="35p-ve-aZ7" firstAttribute="centerY" secondItem="iiy-5F-kwu" secondAttribute="centerY" id="ET6-pk-42C"/>
                             <constraint firstItem="ptL-km-ofJ" firstAttribute="top" secondItem="lbw-W2-eBx" secondAttribute="top" id="JlK-gu-Sfx"/>
                             <constraint firstItem="ptL-km-ofJ" firstAttribute="trailing" secondItem="lbw-W2-eBx" secondAttribute="trailing" id="Utl-Iu-blM"/>
                             <constraint firstItem="ptL-km-ofJ" firstAttribute="leading" secondItem="lbw-W2-eBx" secondAttribute="leading" id="cz6-zE-a7C"/>
@@ -211,6 +220,7 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="Pkk-LN-WD4" id="adt-Gy-QdK"/>
+                        <outlet property="confirmPasswordCheckImage" destination="35p-ve-aZ7" id="0a6-WQ-h5J"/>
                         <outlet property="confirmPasswordText" destination="iiy-5F-kwu" id="iyg-YB-bNG"/>
                         <outlet property="emailText" destination="jLS-h8-E2O" id="iAz-7N-gtR"/>
                         <outlet property="passwordText" destination="3Zm-eu-TGM" id="cIx-Qo-B6N"/>
@@ -243,5 +253,6 @@
     <resources>
         <image name="bg_left1" width="1949" height="3441"/>
         <image name="bg_right1" width="1958" height="3446"/>
+        <image name="red_check" width="40" height="40"/>
     </resources>
 </document>

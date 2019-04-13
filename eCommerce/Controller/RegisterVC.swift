@@ -16,15 +16,40 @@ class RegisterVC: UIViewController {
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var confirmPasswordText: UITextField!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var confirmPasswordCheckImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        passwordText.addTarget(self, action: #selector(textFieldChanged(_:)), for: UIControl.Event.editingChanged)
+        confirmPasswordText.addTarget(self, action: #selector(textFieldChanged(_:)), for: UIControl.Event.editingChanged)
+    }
+    
+    @objc func textFieldChanged(_ textField: UITextField) {
+        guard let password = passwordText.text else {return}
+        if textField == passwordText {
+            if password.isEmpty {
+                confirmPasswordText.text = ""
+                confirmPasswordCheckImage.isHidden = true
+            }
+        }
+        else if textField == confirmPasswordText {
+            confirmPasswordCheckImage.isHidden = false
+        }
+        
+        if passwordText.text == confirmPasswordText.text {
+            confirmPasswordCheckImage.image = UIImage(named: "green_check")
+        }
+        else {
+            confirmPasswordCheckImage.image = UIImage(named: "red_check")
+        }
     }
     
     @IBAction func registerClicked(_ sender: Any) {
-        guard let username = usernameText.text, !username.isEmpty, let email = emailText.text, !email.isEmpty, let password = passwordText.text, !password.isEmpty else {return}
+        guard let username = usernameText.text, username.isNotEmpty, let email = emailText.text, email.isNotEmpty, let password = passwordText.text, password.isNotEmpty else {return}
+        
+        activityIndicator.startAnimating()
         
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             // ...
@@ -33,6 +58,7 @@ class RegisterVC: UIViewController {
                 return
             }
             
+            self.activityIndicator.stopAnimating()
             print("Success")
         }
     }
