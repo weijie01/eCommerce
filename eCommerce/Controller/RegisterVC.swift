@@ -47,11 +47,13 @@ class RegisterVC: UIViewController {
     }
     
     @IBAction func registerClicked(_ sender: Any) {
-        guard let username = usernameText.text, username.isNotEmpty else {
-            handleError(errorMessage: "The username must not be empty.")
+        guard let username = usernameText.text, username.isNotEmpty,
+            let email = emailText.text, email.isNotEmpty,
+            let password = passwordText.text, password.isNotEmpty else {
+            handleError(errorMessage: "All fields must not be empty.")
             return
         }
-        guard let email = emailText.text, let password = passwordText.text else {return}
+        
         guard let confirmPassword = confirmPasswordText.text, confirmPassword == password else {
             handleError(errorMessage: "The password must match.")
             return

@@ -26,7 +26,10 @@ class LoginVC: UIViewController {
     
     @IBAction func loginClicked(_ sender: Any) {
         guard let email = emailText.text, email.isNotEmpty,
-            let password = passwordText.text, password.isNotEmpty else {return}
+            let password = passwordText.text, password.isNotEmpty else {
+                handleError(errorMessage: "All fields must not be empty")
+                return
+        }
         
         activityIndicator.startAnimating()
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] user, error in
