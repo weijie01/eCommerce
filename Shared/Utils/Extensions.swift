@@ -16,8 +16,8 @@ extension String {
 }
 
 extension UIViewController {
-    func handleFirebaseAuthError(error : Error) {
-        let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+    func handleError(errorMessage : String) {
+        let alert = UIAlertController(title: "Error", message: errorMessage, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(okAction)
         present(alert, animated: true, completion: nil)

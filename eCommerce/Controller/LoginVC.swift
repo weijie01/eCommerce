@@ -35,7 +35,7 @@ class LoginVC: UIViewController {
             
             if let error = error {
                 debugPrint(error)
-                strongSelf.handleFirebaseAuthError(error: error)
+                strongSelf.handleError(errorMessage: error.localizedDescription)
                 strongSelf.activityIndicator.stopAnimating()
                 return
             }

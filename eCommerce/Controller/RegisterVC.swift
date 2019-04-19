@@ -47,8 +47,15 @@ class RegisterVC: UIViewController {
     }
     
     @IBAction func registerClicked(_ sender: Any) {
-        guard let username = usernameText.text, username.isNotEmpty, let email = emailText.text, email.isNotEmpty, let password = passwordText.text, password.isNotEmpty else {return}
-        
+        guard let username = usernameText.text, username.isNotEmpty else {
+            handleError(errorMessage: "The username must not be empty.")
+            return
+        }
+        guard let email = emailText.text, let password = passwordText.text else {return}
+        guard let confirmPassword = confirmPasswordText.text, confirmPassword == password else {
+            handleError(errorMessage: "The password must match.")
+            return
+        }
         activityIndicator.startAnimating()
         
         guard let user = Auth.auth().currentUser else {return}
@@ -56,7 +63,7 @@ class RegisterVC: UIViewController {
         user.linkAndRetrieveData(with: credential) { (authResult, error) in
             if let error = error {
                 debugPrint(error)
-                self.handleFirebaseAuthError(error: error)
+                self.handleError(errorMessage: error.localizedDescription)
                 self.activityIndicator.stopAnimating()
                 return
             }
