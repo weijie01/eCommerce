@@ -19,6 +19,7 @@ class HomeVC: UIViewController {
             Auth.auth().signInAnonymously { (result, error) in
                 if let error = error {
                     debugPrint(error)
+                    self.handleFirebaseAuthError(error: error)
                 }
             }
         }
@@ -49,6 +50,7 @@ class HomeVC: UIViewController {
                 Auth.auth().signInAnonymously { (result, error) in
                     if let error = error {
                         debugPrint(error)
+                        self.handleFirebaseAuthError(error: error)
                         return
                     }
                     self.presentLogin()
@@ -56,6 +58,7 @@ class HomeVC: UIViewController {
             }
             catch {
                 debugPrint(error)
+                self.handleFirebaseAuthError(error: error)
             }
             
         }

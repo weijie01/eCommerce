@@ -56,6 +56,7 @@ class RegisterVC: UIViewController {
         user.linkAndRetrieveData(with: credential) { (authResult, error) in
             if let error = error {
                 debugPrint(error)
+                self.handleFirebaseAuthError(error: error)
                 self.activityIndicator.stopAnimating()
                 return
             }
