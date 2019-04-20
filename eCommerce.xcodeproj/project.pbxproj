@@ -26,6 +26,8 @@
 		6DB2A62F225B1CF000FD6845 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2A62D225B1CF000FD6845 /* Main.storyboard */; };
 		6DB2A634225B1CF100FD6845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2A632225B1CF100FD6845 /* LaunchScreen.storyboard */; };
 		6DB2A63A225B1D5C00FD6845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DB2A618225B1A4C00FD6845 /* Assets.xcassets */; };
+		6DD600A8226AE25B00772C23 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD600A6226AE25B00772C23 /* ForgotPasswordVC.swift */; };
+		6DD600A9226AE25B00772C23 /* ForgotPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD600A7226AE25B00772C23 /* ForgotPasswordVC.xib */; };
 		C9D0827FD1B36769ECA828FE /* Pods_eCommerceAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83265144D9D34D48A42717C2 /* Pods_eCommerceAdmin.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		6DB2A62E225B1CF000FD6845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6DB2A633225B1CF100FD6845 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DB2A635225B1CF100FD6845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DD600A6226AE25B00772C23 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		6DD600A7226AE25B00772C23 /* ForgotPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordVC.xib; sourceTree = "<group>"; };
 		83265144D9D34D48A42717C2 /* Pods_eCommerceAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eCommerceAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -175,6 +179,7 @@
 		6DB2A610225B1A4B00FD6845 /* eCommerce */ = {
 			isa = PBXGroup;
 			children = (
+				6DD600A5226AE23800772C23 /* Xibs */,
 				6D59CF9C225FD3F3009F3E5D /* View */,
 				6D59CF9B225FD3E4009F3E5D /* Controller */,
 				6D59CF9A225FD3C3009F3E5D /* Model */,
@@ -206,6 +211,15 @@
 				6DB2A618225B1A4C00FD6845 /* Assets.xcassets */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		6DD600A5226AE23800772C23 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				6DD600A6226AE25B00772C23 /* ForgotPasswordVC.swift */,
+				6DD600A7226AE25B00772C23 /* ForgotPasswordVC.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +309,7 @@
 				6DB2A619225B1A4C00FD6845 /* Assets.xcassets in Resources */,
 				6D025C0D225F1E9B003DA04B /* GoogleService-Info.plist in Resources */,
 				6DB2A617225B1A4B00FD6845 /* Main.storyboard in Resources */,
+				6DD600A9226AE25B00772C23 /* ForgotPasswordVC.xib in Resources */,
 				6D27583D225C217D00A750F2 /* LoginStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +475,7 @@
 				6D3D0CC2225FED64000FDBFF /* LoginVC.swift in Sources */,
 				6D1DEC822263012D00E19ECD /* RoundedViews.swift in Sources */,
 				6DB2A612225B1A4B00FD6845 /* AppDelegate.swift in Sources */,
+				6DD600A8226AE25B00772C23 /* ForgotPasswordVC.swift in Sources */,
 				6D1DEC7F2263007F00E19ECD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
