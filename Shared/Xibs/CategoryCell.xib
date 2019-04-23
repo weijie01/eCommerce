@@ -25,7 +25,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7bh-aE-R2s">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="aerial_1" translatesAutoresizingMaskIntoConstraints="NO" id="7bh-aE-R2s">
                         <rect key="frame" x="0.0" y="0.0" width="215" height="257.5"/>
                     </imageView>
                 </subviews>
@@ -41,7 +41,14 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="215" height="296"/>
+            <connections>
+                <outlet property="categoryImage" destination="7bh-aE-R2s" id="nzX-Hh-3gM"/>
+                <outlet property="categoryLabel" destination="bRQ-To-ibU" id="Dqe-S0-t2r"/>
+            </connections>
             <point key="canvasLocation" x="115.21739130434783" y="97.098214285714278"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="aerial_1" width="1000" height="1333"/>
+    </resources>
 </document>

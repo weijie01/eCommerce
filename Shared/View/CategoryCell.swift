@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CategoryCell: UICollectionViewCell {
 
+    @IBOutlet weak var categoryImage: UIImageView!
+    @IBOutlet weak var categoryLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        categoryImage.layer.cornerRadius = 5
     }
-
+    
+    func configureCell(category: Category) {
+        categoryLabel.text = category.name
+        if let url = URL(string: category.imgUrl) {
+            categoryImage.kf.setImage(with: url)
+        }
+    }
 }
