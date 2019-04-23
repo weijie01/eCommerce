@@ -14,8 +14,20 @@ class HomeVC: UIViewController {
     @IBOutlet weak var loginButton: UIBarButtonItem!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var categories = [Category]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let sampleCategory = Category.init(name: "Mountain", id: "photo-1555999005-20c8ca7cc584", imgUrl: "https://images.unsplash.com/photo-1555999005-20c8ca7cc584?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", isActive: true, timeStamp: Timestamp())
+        let sampleCategory2 = Category.init(name: "Person", id: "photo-1555783242-da78a8b3c8e0", imgUrl: "https://images.unsplash.com/photo-1555783242-da78a8b3c8e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", isActive: true, timeStamp: Timestamp())
+        categories.append(sampleCategory)
+        categories.append(sampleCategory2)
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(UINib(nibName: "CategoryCell", bundle: nil), forCellWithReuseIdentifier: "CategoryCell")
+        
         if Auth.auth().currentUser == nil {
             Auth.auth().signInAnonymously { (result, error) in
                 if let error = error {
@@ -70,3 +82,23 @@ class HomeVC: UIViewController {
     }
 }
 
+extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return categories.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as? CategoryCell {
+            cell.configureCell(category: categories[indexPath.item])
+            return cell
+        }
+        return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellWidth = (view.frame.width - 50) / 2
+        let cellHeight = cellWidth * 1.5
+        return CGSize(width: cellWidth, height: cellHeight)
+    }
+}
