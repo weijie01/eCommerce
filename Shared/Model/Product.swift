@@ -13,7 +13,7 @@ struct Product {
     var name: String
     var id: String
     var category: String
-    var price: String
+    var price: Double
     var productDescription: String
     var imageUrl: String
     var timeStamp: Timestamp
