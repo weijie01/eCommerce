@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Whh-mq-YV8">
-                                <rect key="frame" x="20" y="88" width="374" height="808"/>
+                                <rect key="frame" x="10" y="88" width="394" height="808"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LbJ-zt-DgR">
                                     <size key="itemSize" width="50" height="50"/>
@@ -39,8 +39,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Whh-mq-YV8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7GU-Ke-S5D"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Whh-mq-YV8" secondAttribute="trailing" constant="20" id="9rd-Rn-geu"/>
+                            <constraint firstItem="Whh-mq-YV8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="7GU-Ke-S5D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Whh-mq-YV8" secondAttribute="trailing" constant="10" id="9rd-Rn-geu"/>
                             <constraint firstItem="in8-19-gr4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="D0H-Hr-zxK"/>
                             <constraint firstItem="04R-XW-7Tp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KCh-q4-fHb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="in8-19-gr4" secondAttribute="trailing" id="UZ9-wl-QuO"/>
@@ -81,20 +81,20 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yrs-ge-Y3B">
-                                <rect key="frame" x="20" y="88" width="374" height="808"/>
+                                <rect key="frame" x="2" y="88" width="410" height="808"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Iyv-M4-M44" firstAttribute="leading" secondItem="ude-ri-atz" secondAttribute="leading" id="7XE-xO-Kv3"/>
-                            <constraint firstItem="yrs-ge-Y3B" firstAttribute="leading" secondItem="ude-ri-atz" secondAttribute="leading" constant="20" id="Aqk-PE-atq"/>
+                            <constraint firstItem="yrs-ge-Y3B" firstAttribute="leading" secondItem="ude-ri-atz" secondAttribute="leading" constant="2" id="Aqk-PE-atq"/>
                             <constraint firstAttribute="bottom" secondItem="Iyv-M4-M44" secondAttribute="bottom" id="BMe-2w-kKg"/>
                             <constraint firstAttribute="bottom" secondItem="yrs-ge-Y3B" secondAttribute="bottom" id="Lvb-Al-SuG"/>
                             <constraint firstItem="Iyv-M4-M44" firstAttribute="trailing" secondItem="ude-ri-atz" secondAttribute="trailing" id="Qua-eS-WcD"/>
                             <constraint firstItem="yrs-ge-Y3B" firstAttribute="top" secondItem="ude-ri-atz" secondAttribute="top" id="nOq-Vf-i2w"/>
                             <constraint firstItem="Iyv-M4-M44" firstAttribute="top" secondItem="ude-ri-atz" secondAttribute="top" id="nnl-vO-Q5E"/>
-                            <constraint firstItem="ude-ri-atz" firstAttribute="trailing" secondItem="yrs-ge-Y3B" secondAttribute="trailing" constant="20" id="sL6-Yt-Gfo"/>
+                            <constraint firstItem="ude-ri-atz" firstAttribute="trailing" secondItem="yrs-ge-Y3B" secondAttribute="trailing" constant="2" id="sL6-Yt-Gfo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ude-ri-atz"/>
                     </view>
