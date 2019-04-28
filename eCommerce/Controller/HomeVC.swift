@@ -11,10 +11,13 @@ import Firebase
 
 class HomeVC: UIViewController {
 
+    //Outlets
     @IBOutlet weak var loginButton: UIBarButtonItem!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    //Variables
     var categories = [Category]()
+    var selectedCategory: Category!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,5 +103,18 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         let cellWidth = (view.frame.width - 50) / 2
         let cellHeight = cellWidth * 1.5
         return CGSize(width: cellWidth, height: cellHeight)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedCategory = categories[indexPath.item]
+        performSegue(withIdentifier: "toProductsVC", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toProductsVC" {
+            if let destination = segue.destination as? ProductsVC {
+                destination.category = selectedCategory
+            }
+        }
     }
 }
