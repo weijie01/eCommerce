@@ -18,14 +18,11 @@ class HomeVC: UIViewController {
     //Variables
     var categories = [Category]()
     var selectedCategory: Category!
+    var db: Firestore!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let sampleCategory = Category.init(name: "Mountain", id: "photo-1555999005-20c8ca7cc584", imgUrl: "https://images.unsplash.com/photo-1555999005-20c8ca7cc584?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", isActive: true, timeStamp: Timestamp())
-        let sampleCategory2 = Category.init(name: "Person", id: "photo-1555783242-da78a8b3c8e0", imgUrl: "https://images.unsplash.com/photo-1555783242-da78a8b3c8e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", isActive: true, timeStamp: Timestamp())
-        categories.append(sampleCategory)
-        categories.append(sampleCategory2)
+        db = Firestore.firestore()
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -38,6 +35,20 @@ class HomeVC: UIViewController {
                     self.handleError(errorMessage: error.localizedDescription)
                 }
             }
+        }
+        
+        fetchCollection()
+    }
+    
+    func fetchCollection() {
+        let collectionRef = db.collection("categories")
+        collectionRef.getDocuments { (snap, error) in
+            guard let documents = snap?.documents else {return}
+            for document in documents {
+                let newCategory = Category.init(data: document.data())
+                self.categories.append(newCategory)
+            }
+            self.collectionView.reloadData()
         }
     }
     
