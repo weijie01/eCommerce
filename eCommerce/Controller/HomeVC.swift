@@ -91,6 +91,8 @@ class HomeVC: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         listener.remove()
+        categories.removeAll()
+        collectionView.reloadData()
     }
     
     fileprivate func presentLogin() {
