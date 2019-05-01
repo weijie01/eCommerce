@@ -19,6 +19,7 @@ class HomeVC: UIViewController {
     var categories = [Category]()
     var selectedCategory: Category!
     var db: Firestore!
+    var listener: ListenerRegistration!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,13 +37,13 @@ class HomeVC: UIViewController {
                 }
             }
         }
-        
-        fetchCollection()
     }
     
     func fetchCollection() {
         let collectionRef = db.collection("categories")
-        collectionRef.getDocuments { (snap, error) in
+        
+        listener = collectionRef.addSnapshotListener { (snap, error) in
+            self.categories.removeAll()
             guard let documents = snap?.documents else {return}
             for document in documents {
                 let newCategory = Category.init(data: document.data())
@@ -50,6 +51,15 @@ class HomeVC: UIViewController {
             }
             self.collectionView.reloadData()
         }
+        
+//        collectionRef.getDocuments { (snap, error) in
+//            guard let documents = snap?.documents else {return}
+//            for document in documents {
+//                let newCategory = Category.init(data: document.data())
+//                self.categories.append(newCategory)
+//            }
+//            self.collectionView.reloadData()
+//        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -61,6 +71,12 @@ class HomeVC: UIViewController {
             // to log in
             loginButton.title = "Login"
         }
+        
+        fetchCollection()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        listener.remove()
     }
     
     fileprivate func presentLogin() {
