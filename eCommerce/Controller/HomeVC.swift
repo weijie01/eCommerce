@@ -54,9 +54,9 @@ class HomeVC: UIViewController {
                 case .added:
                     self.onDocumentAdded(change: change, category: category)
                 case .modified:
-                    self.onDocumentModified()
+                    self.onDocumentModified(change: change, category: category)
                 case .removed:
-                    self.onDocumentRemoved()
+                    self.onDocumentRemoved(change: change)
                 }
             })
         }
@@ -68,12 +68,25 @@ class HomeVC: UIViewController {
         collectionView.insertItems(at: [IndexPath(item: newIndex, section: 0)])
     }
     
-    func onDocumentModified() {
-        
+    func onDocumentModified(change: DocumentChange, category: Category) {
+        if (change.oldIndex == change.newIndex) {
+            let index = Int(change.oldIndex)
+            categories[index] = category
+            collectionView.reloadItems(at: [IndexPath(item: index, section: 0)])
+        }
+        else {
+            let oldIndex = Int(change.oldIndex)
+            let newIndex = Int(change.newIndex)
+            categories.remove(at: oldIndex)
+            categories.insert(category, at: newIndex)
+            collectionView.moveItem(at: IndexPath(item: oldIndex, section: 0), to: IndexPath(item: newIndex, section: 0))
+        }
     }
     
-    func onDocumentRemoved() {
-        
+    func onDocumentRemoved(change: DocumentChange) {
+        let oldIndex = Int(change.oldIndex)
+        categories.remove(at: oldIndex)
+        collectionView.deleteItems(at: [IndexPath(item: oldIndex, section: 0)])
     }
     
     override func viewDidAppear(_ animated: Bool) {
